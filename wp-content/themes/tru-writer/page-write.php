@@ -30,7 +30,7 @@ if ( ! ($wid and $tk) ) {
 // ------------------------ defaults ------------------------
 
 // default welcome message
-$feedback_msg = 'Enter the content for your writing below. You must save first and preview once before it goes into the system as a draft. After that, continue to edit, save, and preview as much as needed. Remember to click  <strong>Publish Final</strong> when you are done. If you include your email address, we can send you a link that will allow you to make changes later.';
+$feedback_msg = 'Add your story in the space below. Once you have finished writing, you will be able to save and preview what you have written. You must save first and preview once before it goes into the system as a draft. After that, you can continue to edit, save and preview as much as needed. Remember to click  <strong>Publish Final</strong> when you are ready to share your story. You do not need to include an email address but if you do we can send you a link that will allow you to make changes later.';
 
 $wTitle = '';
 $wAuthor = "Anonymous";
