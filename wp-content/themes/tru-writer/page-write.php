@@ -486,12 +486,9 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 						
 						</div>
 						
-						<p>You can upload any image file to be used in the header or choose from ones that have already been added to the site. Ideally this image should be at least 1440px wide for photos. </p><p> Any uploaded image should either be your own or one licensed for re-use; provide an attribution credit for the image in the caption field below.<br clear="left"></p>
+						<p>You can click on the Set Header Image button to upload an image you want to use as the featured image or choose from ones that have already been added to the site. </p><p> If you don't choose an image, the image seen here will accompany your story.<br clear="left"></p>
 						
-						<label for="wHeaderImageCaption"><?php _e('Caption/credits for header image', 'wpbootstrap') ?></label>
-						<input type="text" name="wHeaderImageCaption" id="wHeaderImageCaption" value="<?php echo htmlentities( stripslashes( $wHeaderImageCaption ), ENT_QUOTES); ?>" tabindex="6" />
-				
-				</fieldset>						
+                </fieldset>
 				
 				<fieldset>
 					<label for="wCats"><?php _e( 'Kind of Writing', 'wpbootstrap' ) ?></label>
@@ -519,7 +516,7 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 
 				<fieldset>
 					<label for="wTags"><?php _e( 'Tags', 'wpbootstrap' ) ?></label>
-					<p>Descriptive tags, separate multiple ones with commas</p>
+					<p>You can add descriptive tags that might help others search for your sotry. If you add multiple tags, separate them with commas.</p>
 					
 					<input type="text" name="wTags" id="wTags" value="<?php echo $wTags; ?>" tabindex="8"  />
 				</fieldset>
