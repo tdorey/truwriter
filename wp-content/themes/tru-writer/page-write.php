@@ -255,7 +255,7 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 								$feedback_msg .=  'We will notify you by email at <strong>' . $wEmail . '</strong> when it has been published.';
 							}
 							
-							$feedback_msg .= ' Now please <a href="' . truwriter_publink( site_url() ) . '">deactivate the lasers and return to ' . get_bloginfo() . '</a>.';
+							$feedback_msg .= ' Now please <a href="' . truwriter_publink( site_url() ) . '">You might now want to return to ' . get_bloginfo() . '</a>.';
 							
 							// set up admin email
 							$subject = 'Review newly submitted writing at ' . get_bloginfo();
@@ -269,7 +269,7 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 							// set up admin email
 							$subject = 'Recently published writing at ' . get_bloginfo();
 					
-							$message = '<strong>"' . $wTitle . '"</strong> written by <strong>' . $wAuthor . '</strong>  has been published to ' . get_bloginfo() . '. You can <a href="'. site_url() . '/?p=' . $post_id . 'preview=true' . '">view it now</a> and review / edit if needed, or just enjoy the feeling of being published.';
+							$message = '<strong>"' . $wTitle . '"</strong> written by <strong>' . $wAuthor . '</strong>  has been published to ' . get_bloginfo() . '. You can <a href="'. site_url() . '/?p=' . $post_id . 'preview=true' . '">view it now</a> and review / edit if needed, or just enjoy the feeling of having shared your story.';
 						
 						}
 
@@ -453,7 +453,7 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 
 				<fieldset>
 					<label for="wAuthor"><?php _e('How to List Author', 'wpbootstrap' ) ?></label><br />
-					<p>Publish under your name, twitter handle, secret agent name, or remain "Anonymous". If you include a twitter handle such as @billyshakespeare, when someone tweets your work you will get a lovely notification.</p>
+					<p>You can choose to use your real name, a twitter handle or other alias or remain "Anonymous". If you include a twitter handle such as @billyshakespeare, when someone tweets your work you will get a lovely notification.</p>
 					<input type="text" name="wAuthor" id="wAuthor" class="required" value="<?php echo $wAuthor; ?>" tabindex="2" />
 				</fieldset>	
 				
@@ -471,13 +471,6 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 						?>
 				</fieldset>
 
-				<fieldset>
-						<label for="wFooter"><?php _e('Additional Information', 'wpbootstrap') ?></label>						
-						<p>Add any endnote like text you wish to append to the end, such as a citation to where it was previously published or any other meta information. URLs will be hyperlinked when published. </p>
-						<textarea name="wFooter" id="wFooter" rows="15"  tabindex="4"><?php echo stripslashes( $wFooter );?></textarea>
-				</fieldset>
-
-				
 				<fieldset>
 					<label for="headerImage"><?php _e('Header Image', 'wpbootstrap') ?></label>
 					
