@@ -49,9 +49,6 @@ $is_published = false;
 // flag for re-edits
 $is_re_edit = false;
 
-// Get the attachment excerpt as a default caption
-$wHeaderImageCaption = get_attachment_caption_by_id( $wHeaderImage_id );
-
 // Parent category for published topics
 $published_cat_id = get_cat_ID( 'Published' );
 
