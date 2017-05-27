@@ -38,15 +38,6 @@ $wEmail = '';
 $wText =  truwriter_option('def_text'); // pre-fill the writing area
 $wCats = array( truwriter_option('def_cat')); // preload default category
 
-// creative commons usage mode
-$my_cc_mode = truwriter_option( 'use_cc' ); 
-$wLicense = truwriter_option( 'cc_site' ); //default if used
-
-$wStatus = "New, not saved";
-
-$wHeaderImage_id = truwriter_option('defheaderimg');
-$wNotes_required = truwriter_option('require_extra_info');
-
 // not yet saved
 $post_id = 0;
 $revcount = 0;
