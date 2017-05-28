@@ -489,34 +489,10 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 						<p>You can click on the Set Header Image button to upload an image you want to use as the featured image or choose from ones that have already been added to the site. </p><p> If you don't choose an image, the image seen here will accompany your story.<br clear="left"></p>
 						
                 </fieldset>
-				
-				<fieldset>
-					<label for="wCats"><?php _e( 'Kind of Writing', 'wpbootstrap' ) ?></label>
-					<p>Check as many that apply.</p>
-					<?php 
-					
-					// set up arguments to get all categories that are children of "Published"
-					$args = array(
-						'child_of'                 => $published_cat_id,
-						'hide_empty'               => 0,
-					); 
-					
-					$article_cats = get_categories( $args );
-
-					foreach ( $article_cats as $acat ) {
-					
-						$checked = ( in_array( $acat->term_id, $wCats) ) ? ' checked="checked"' : '';
-						
-						echo '<br /><input type="checkbox" name="wCats[]" tabindex="7" value="' . $acat->term_id . '"' . $checked . '> ' . $acat->name . ' <em style="font-size:smaller">' . $acat->description . '</em>';
-					}
-					
-					?>
-					
-				</fieldset>
-
+								
 				<fieldset>
 					<label for="wTags"><?php _e( 'Tags', 'wpbootstrap' ) ?></label>
-					<p>You can add descriptive tags that might help others search for your sotry. If you add multiple tags, separate them with commas.</p>
+					<p>You can add descriptive tags that might help others search for your story. If you add multiple tags, separate them with commas.</p>
 					
 					<input type="text" name="wTags" id="wTags" value="<?php echo $wTags; ?>" tabindex="8"  />
 				</fieldset>
