@@ -471,26 +471,29 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 						?>
 				</fieldset>
 
-				<fieldset>
-					<label for="headerImage"><?php _e('Header Image', 'wpbootstrap') ?></label>
-					
-						
-					<div class="uploader">
-						<input id="wHeaderImage" name="wHeaderImage" type="hidden" value="<?php echo $wHeaderImage_id?>" />
+            <fieldset>
+                <label for="headerImage"><?php _e('Header Image', 'wpbootstrap') ?></label>
 
-						<?php $defthumb = wp_get_attachment_image_src( $wHeaderImage_id, 'thumbnail' );?>
-					
-						<img src="<?php echo $defthumb[0]?>" alt="article banner image" id="headerthumb" /><br />
-					
-						<input type="button" id="wHeaderImage_button"  class="btn btn-success btn-medium  upload_image_button" name="_wImage_button"  data-uploader_title="Set Header Image" data-uploader_button_text="Select Image" value="Set Header Image" tabindex="5" />
-						
-						</div>
-						
-						<p>You can click on the Set Header Image button to upload an image you want to use as the featured image or choose from ones that have already been added to the site. </p><p> If you don't choose an image, the image seen here will accompany your story.<br clear="left"></p>
-						
-                </fieldset>
 
-				<fieldset>
+                <div class="uploader">
+                    <input id="wHeaderImage" name="wHeaderImage" type="hidden" value="<?php echo $wHeaderImage_id?>" />
+
+                    <?php $defthumb = wp_get_attachment_image_src( $wHeaderImage_id, 'thumbnail' );?>
+
+                    <img src="<?php echo $defthumb[0]?>" alt="article banner image" id="headerthumb" /><br />
+
+                    <input type="button" id="wHeaderImage_button"  class="btn btn-success btn-medium  upload_image_button" name="_wImage_button"  data-uploader_title="Set Header Image" data-uploader_button_text="Select Image" value="Set Header Image" tabindex="5" />
+
+                </div>
+
+                <p>You can upload any image file to be used in the header. </p><p> If you don't select an image, the default on the left will be incuded with your story.<br clear="left"></p>
+
+                <label for="wHeaderImageCaption"><?php _e('Caption/credits for header image', 'wpbootstrap') ?></label>
+                <input type="text" name="wHeaderImageCaption" id="wHeaderImageCaption" value="<?php echo htmlentities( stripslashes( $wHeaderImageCaption ), ENT_QUOTES); ?>" tabindex="6" />
+
+            </fieldset>
+
+            <fieldset>
 					<label for="wTags"><?php _e( 'Tags', 'wpbootstrap' ) ?></label>
 					<p>You can add descriptive tags that might help others search for your story. If you add multiple tags, separate them with commas.</p>
 					
