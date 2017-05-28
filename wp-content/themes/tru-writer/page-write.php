@@ -446,20 +446,20 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 			
 				<fieldset>
 					<label for="wTitle"><?php _e('The Title', 'wpbootstrap' ) ?></label><br />
-					<p>A good title is important! Create an eye catching title for your story, one that would make a person who sees it want to stop whatever they are doing and read it. </p>
+					<p>Add the title here. </p>
 					<input type="text" name="wTitle" id="wTitle" class="required" value="<?php echo $wTitle; ?>" tabindex="1" />
 				</fieldset>	
 			
 
 				<fieldset>
 					<label for="wAuthor"><?php _e('How to List Author', 'wpbootstrap' ) ?></label><br />
-					<p>You can choose to use your real name, a twitter handle or other alias or remain "Anonymous". If you include a twitter handle such as @billyshakespeare, when someone tweets your work you will get a lovely notification.</p>
+					<p>You can choose to use your real name, a twitter handle or remain "Anonymous". If you include a twitter handle such as @billyshakespeare, when someone tweets your work you will get a lovely notification.</p>
 					<input type="text" name="wAuthor" id="wAuthor" class="required" value="<?php echo $wAuthor; ?>" tabindex="2" />
 				</fieldset>	
 				
 				<fieldset>
 						<label for="wText"><?php _e('Article text', 'wpbootstrap') ?></label>
-						<p>Okay, here is where your story goes! Use the editing area below the tool bar to write and format your writing. You can also paste formatted content here (e.g. from MS Word or Google Docs). The editing tool will do its best to preserve standard formatting--headings, bold, italic, lists, footnotes, and hypertext links. Click "Add Media" to upload images to include in your writing or choose from the media already in the media library (click on the tab labelled "media library"). You can also embed audio and video from many social sites simply by putting the URL of the media on a separate line (you will see a place holder in the editor, but the media will only show in preview and when published).  Click and drag the icon in the lower right to resize the editing space.</p>
+						<p>Write your story here. Use the editing area below the tool bar to write and format your writing. You can also paste content here (e.g. from MS Word or Google Docs). The editing tool will do its best to preserve standard formatting--headings, bold, italic, links, etc. Click "Add Media" to upload images to include in your writing. You can also embed audio and video from many social sites.  Click and drag the icon in the lower right to make the editing space bigger.</p>
 						
 						<p> See more info in the  
 <a class="video fancybox.iframe" href="<?php echo get_stylesheet_directory_uri()?>/includes/edit-help.html">editing tips</a>.</p>
@@ -489,7 +489,7 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 						<p>You can click on the Set Header Image button to upload an image you want to use as the featured image or choose from ones that have already been added to the site. </p><p> If you don't choose an image, the image seen here will accompany your story.<br clear="left"></p>
 						
                 </fieldset>
-								
+
 				<fieldset>
 					<label for="wTags"><?php _e( 'Tags', 'wpbootstrap' ) ?></label>
 					<p>You can add descriptive tags that might help others search for your story. If you add multiple tags, separate them with commas.</p>
