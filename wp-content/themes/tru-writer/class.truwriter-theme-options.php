@@ -225,7 +225,7 @@ class truwriter_Theme_Options {
 		$this->settings['hashtags'] = array(
 			'title'   => __( 'Twitter Button Hashtag(s)' ),
 			'desc'    => __( 'When a writing is tweeted add these hashtags. Do not include # and separate multiple hashtags with commas.' ),
-			'std'     => 'splotwriter',
+			'std'     => 'Ineededhelp, unsilenced',
 			'type'    => 'text',
 			'section' => 'general'
 		);
