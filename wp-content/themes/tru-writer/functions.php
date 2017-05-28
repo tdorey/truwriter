@@ -551,20 +551,18 @@ add_action(  'publish_post',  'truwriter_publish', 10, 2 );
 # -----------------------------------------------------------------
 
 function wpb_alter_comment_form_fields($fields) {
+    
+// Modify Name Field and show that it's Optional
+    $fields['author'] = '<p class="comment-form-author">' . '<label for="author">' . __( 'Name (Optional)' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+        '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>';
 
-    // Modify Name field and show that it's optional
-    $fields['author'] = '< p class="comment-form-author">' . '<label for="author">.' . __( 'Name or Alias (Optional)') . '</label. ' . ( $req ? '<span class="required">*</span>span>' : '') .
-        '<input id="author" name="author" type="text" value=""' . esc_attr(
-                $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>';
+// Modify Email Field and show that it's Optional
+    $fields['email'] = '<p class="comment-form-email"><label for="email">' . __( 'Email (Optional)', 'twentythirteen' ) . '</label> ' .
+        ( $req ? '<span class="required">*</span>' : '' ) .
+        '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+        '" size="30"' . $aria_req . ' /></p>';
 
-    //Modify email field and show that it's optional
-    $fields['email'] = '<p class="comment-form-email"><label for="email">' . __(
-            'Email (optional)', 'twentythirteen' . '</label> ' .
-    '<input id=""email" name="email type="text value="' . esc_attr(
-            $commenter[ 'comment_author_email'] ) .
-    '" size="30"' . $aria_req . ' /></p>';
-
-            // This line removes the website URL from the comment form
+// This line removes the website URL from comment form.
     $fields['url'] = '';
 
     return $fields;
