@@ -572,12 +572,12 @@ add_filter('comment_form_default_fields', 'wpb_alter_comment_form_fields');
 # -----------------------------------------------------------------
 # Adding a sidebar
 # -----------------------------------------------------------------
-function wpb_widgets_init() {
+function radcliffe_widget_areas_reg() {
 
     register_sidebar( array(
-        'name' => __( 'Main Sidebar', 'wpb' ),
+        'name' => __( 'Main Sidebar', 'radcliffe' ),
         'id' => 'sidebar-1',
-        'description' => __( 'The main sidebar appears on the right on each page except the front page template', 'wpb' ),
+        'description' => __( 'The main sidebar appears on the right on each page except the front page template', 'radcliffe' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
@@ -585,7 +585,7 @@ function wpb_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' =>__( 'Front page sidebar', 'wpb'),
+        'name' =>__( 'Front page sidebar', 'radcliffe'),
         'id' => 'sidebar-2',
         'description' => __( 'Appears on the static front page template', 'wpb' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -595,7 +595,7 @@ function wpb_widgets_init() {
     ) );
 }
 
-add_action( 'widgets_init', 'wpb_widgets_init' );
+add_action( 'widgets_init', 'radcliffe_widgets_init' );
 
 
 # -----------------------------------------------------------------
