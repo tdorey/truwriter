@@ -105,7 +105,6 @@ function radcliffe_widget_areas_reg() {
             'after_title' => '</h3>',
         ) );
     }
-}
 
 
 // Set content-width
