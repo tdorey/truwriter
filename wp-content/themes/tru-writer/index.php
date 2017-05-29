@@ -55,6 +55,6 @@
 		
 </div> <!-- /content section-inner -->
 
-    <div> <!--?php include (TEMPLATEPATH . '/sidebar.php'); ?-->
+    <!--?php include (TEMPLATEPATH . '/sidebar.php'); ?-->
 
 <?php get_footer(); ?>
