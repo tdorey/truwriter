@@ -573,8 +573,6 @@ add_filter('comment_form_default_fields', 'wpb_alter_comment_form_fields');
 # Adding a sidebar
 # -----------------------------------------------------------------
 
-add_action( 'widgets_init', 'radcliffe_widget_areas_reg' );
-
 function radcliffe_widget_areas_reg() {
     register_sidebarnew( array(
         'name' => __( 'Main Sidebar', 'radcliffe' ),
