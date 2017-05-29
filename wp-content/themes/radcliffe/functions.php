@@ -95,6 +95,16 @@ function radcliffe_widget_areas_reg() {
 	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
 	  'after_widget' => '</div><div class="clear"></div></div>'
 	));
+        register_sidebar( array(
+            'name' => __( 'Main Sidebar', 'radcliffe' ),
+            'id' => 'sidebar-1',
+            'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'twentytwelve' ),
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget' => '</aside>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        ) );
+    }
 }
 
 
