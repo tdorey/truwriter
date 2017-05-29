@@ -572,30 +572,8 @@ add_filter('comment_form_default_fields', 'wpb_alter_comment_form_fields');
 # -----------------------------------------------------------------
 # Adding a sidebar
 # -----------------------------------------------------------------
-function truwriter_widget_areas_reg() {
 
-    register_sidebar( array(
-        'name' => __( 'Main Sidebar', 'truwriter' ),
-        'id' => 'sidebar-1',
-        'description' => __( 'The main sidebar appears on the right on each page except the front page template', 'truwriter' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
-    ) );
 
-    register_sidebar( array(
-        'name' =>__( 'Front page sidebar', 'truwriter'),
-        'id' => 'sidebar-2',
-        'description' => __( 'Appears on the static front page template', 'truwriter' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
-    ) );
-}
-
-add_action( 'widgets_init');
 
 
 # -----------------------------------------------------------------
