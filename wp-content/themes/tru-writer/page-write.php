@@ -486,10 +486,7 @@ if ( isset( $_POST['truwriter_form_make_submitted'] ) && wp_verify_nonce( $_POST
 
                 </div>
 
-                <p>You can upload any image file to be used in the header. </p><p> If you don't select an image, the default on the left will be incuded with your story.<br clear="left"></p>
-
-                <label for="wHeaderImageCaption"><?php _e('Caption/credits for header image', 'wpbootstrap') ?></label>
-                <input type="text" name="wHeaderImageCaption" id="wHeaderImageCaption" value="<?php echo htmlentities( stripslashes( $wHeaderImageCaption ), ENT_QUOTES); ?>" tabindex="6" />
+                <p>You can upload any image file to be used in the header. </p><p> If you don't upload an image, the default image will be included with your post.<br clear="left"></p>
 
             </fieldset>
 

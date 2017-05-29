@@ -551,7 +551,7 @@ add_action(  'publish_post',  'truwriter_publish', 10, 2 );
 # -----------------------------------------------------------------
 
 function wpb_alter_comment_form_fields($fields) {
-    
+
 // Modify Name Field and show that it's Optional
     $fields['author'] = '<p class="comment-form-author">' . '<label for="author">' . __( 'Name (Optional)' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
         '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>';
