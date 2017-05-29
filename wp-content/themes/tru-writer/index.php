@@ -55,18 +55,6 @@
 		
 </div> <!-- /content section-inner -->
 
-#Adding sidebar
-
-    <div class="wnhp-sidebar">
-
-<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-    <div id="secondary" class="widget-area" role="complementary">
-        <?php dynamic_sidebar( 'sidebar-1' ); ?>
-    </div>
-<?php endif; ?>
-
-    </div> <!-- /wnhp-sidebar -->
-
-<?php get_sidebar(); ?>
+    <div> <!--?php include (TEMPLATEPATH . '/sidebar.php'); ?-->
 
 <?php get_footer(); ?>
