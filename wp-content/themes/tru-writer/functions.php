@@ -573,8 +573,19 @@ add_filter('comment_form_default_fields', 'wpb_alter_comment_form_fields');
 # Adding a sidebar
 # -----------------------------------------------------------------
 
+add_action( 'widgets_init', 'radcliffe_widget_areas_reg' );
 
-
+function radcliffe_widget_areas_reg() {
+    register_sidebar( array(
+        'name' => __( 'Main Sidebar', 'radcliffe' ),
+        'id' => 'sidebar-1',
+        'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'twentytwelve' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+}
 
 # -----------------------------------------------------------------
 # Useful spanners and wrenches
