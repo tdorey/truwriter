@@ -595,7 +595,7 @@ function truwriter_widget_areas_reg() {
     ) );
 }
 
-add_action( 'widgets_init', 'truwriter_widgets_init' );
+add_action( 'widgets_init');
 
 
 # -----------------------------------------------------------------
