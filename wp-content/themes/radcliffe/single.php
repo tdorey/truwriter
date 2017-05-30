@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 
+    </div>
+<?php get_sidebar(); ?>
+    </div>
+
 <div class="content">
 
-    <?php get_sidebar(); ?>
-											        
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
