@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-    </div>
-<?php get_sidebar(); ?>
-    </div>
+    <div id="main">
 
 <div class="content">
 
@@ -58,5 +56,10 @@
 		
 </div> <!-- /content section-inner -->
 
+    </div>
+<?php get_sidebar(); ?>
+    </div>
+
+    </div>
 
 <?php get_footer(); ?>
