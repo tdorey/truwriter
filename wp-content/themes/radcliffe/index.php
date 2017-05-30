@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-    <div id="main">
-
         <div class="content">
 
 	    <?php if (have_posts()) : ?>
@@ -56,7 +54,6 @@
 		
         </div> <!-- /content section-inner -->
 
-        <?php get_sidebar(); ?>
-    </div>
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

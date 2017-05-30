@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 
-    </div>
-<?php get_sidebar(); ?>
-    </div>
-
 <div class="content">
 											        
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -55,5 +51,7 @@
 	</div> <!-- /post -->
 
 </div> <!-- /content -->
+
+<?php get_sidebar(); ?>
 		
 <?php get_footer(); ?>
