@@ -1,18 +1,17 @@
 <?php get_header(); ?>
 
-    </div>
-<?php get_sidebar(); ?>
-    </div>
+    <div id="main">
 
-<div class="content">
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="content">
+
+	        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		    <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<?php if ( has_post_thumbnail() ) : ?>
+			    <?php if ( has_post_thumbnail() ) : ?>
 			
-				<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'post-image' ); $url = $thumb['0']; ?>
+				    <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'post-image' ); $url = $thumb['0']; ?>
 		
 				<div class="featured-media">
 				

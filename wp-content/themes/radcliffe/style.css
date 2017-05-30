@@ -2510,3 +2510,13 @@ li.comment {
 	
 	
 }
+
+/* sidebar float */
+#primary {
+	float: left;
+	width: 75%;
+}
+#secondary {
+	float: left;
+	width: 25%;
+}
