@@ -64,7 +64,12 @@ function radcliffe_add_editor_styles() {
 add_action( 'init', 'radcliffe_add_editor_styles' );
 
 
-// Add footer widget areas
+//Add sidebar widget areas
+function radcliffe_widget_areas_reg() {
+    
+
+    // Add footer widget areas
+}
 add_action( 'widgets_init', 'radcliffe_widget_areas_reg' ); 
 
 function radcliffe_widget_areas_reg() {
