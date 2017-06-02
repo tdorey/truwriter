@@ -62,5 +62,7 @@
 	<div class="clear"></div>
 	
 </div> <!-- /content -->
+
+<?php get_sidebar(); ?>
 								
 <?php get_footer(); ?>
