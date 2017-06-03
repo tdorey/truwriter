@@ -55,5 +55,6 @@
 		
 </div> <!-- /content section-inner -->
 
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
