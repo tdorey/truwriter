@@ -65,10 +65,9 @@ add_action( 'init', 'radcliffe_add_editor_styles' );
 
 
     // Add footer & sidebar widget areas
+add_action( 'widgets_init', 'radcliffe_widget_areas_init' );
 
-add_action( 'widgets_init', 'radcliffe_widget_areas_reg' ); 
-
-function radcliffe_widget_areas_reg() {
+function radcliffe_widgets_init() {
 	register_sidebar(array(
 	  'name' => __( 'Footer A', 'radcliffe' ),
 	  'id' => 'footer-a',
@@ -106,17 +105,7 @@ function radcliffe_widget_areas_reg() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
         ) );
-
-    register_sidebar( array(
-        'name' => __( 'Main Sidebar', 'radcliffe' ),
-        'id' => 'sidebar-1',
-        'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'twentytwelve' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
-    ) );
-    }
+       }
 
 
 
