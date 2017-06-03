@@ -42,12 +42,11 @@
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------------- */
 
-html, body { margin:0; padding:0; width:75%;}
+html, body { margin:0; padding:0;}
 
 h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
 	margin:0;
 	padding:0;
-    width: 75%;
 	border:0;
 	font-weight:normal;
 	font-style:normal;
@@ -2513,14 +2512,4 @@ li.comment {
 	.bypostauthor .by-post-author { background-image: url(images/icons/2x/author-w.png); }
 	
 	
-}
-
-/* sidebar float */
-#primary {
-	float: left;
-	width: 75%;
-}
-#secondary {
-	float: right;
-	width: 25%;
 }
