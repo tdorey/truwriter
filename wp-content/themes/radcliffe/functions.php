@@ -64,50 +64,37 @@ function radcliffe_add_editor_styles() {
 add_action( 'init', 'radcliffe_add_editor_styles' );
 
 
-    // Add footer & sidebar widget areas
-add_action( 'widgets_init', 'radcliffe_widget_areas_init' );
-
-function radcliffe_widgets_init() {
-	register_sidebar(array(
-	  'name' => __( 'Footer A', 'radcliffe' ),
-	  'id' => 'footer-a',
-	  'description' => __( 'Widgets in this area will be shown in the left column in the footer.', 'radcliffe' ),
-	  'before_title' => '<h3 class="widget-title">',
-	  'after_title' => '</h3>',
-	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
-	  'after_widget' => '</div><div class="clear"></div></div>'
-	));	
-	register_sidebar(array(
-	  'name' => __( 'Footer B', 'radcliffe' ),
-	  'id' => 'footer-b',
-	  'description' => __( 'Widgets in this area will be shown in the middle column in the footer.', 'radcliffe' ),
-	  'before_title' => '<h3 class="widget-title">',
-	  'after_title' => '</h3>',
-	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
-	  'after_widget' => '</div><div class="clear"></div></div>'
-	));
-	register_sidebar(array(
-	  'name' => __( 'Footer C', 'radcliffe' ),
-	  'id' => 'footer-c',
-	  'description' => __( 'Widgets in this area will be shown in the right column in the footer.', 'radcliffe' ),
-	  'before_title' => '<h3 class="widget-title">',
-	  'after_title' => '</h3>',
-	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
-	  'after_widget' => '</div><div class="clear"></div></div>'
-	));
-
-    register_sidebar( array(
-        'name' => __( 'Main Sidebar', 'radcliffe' ),
-        'id' => 'sidebar-1',
-        'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'radcliffe' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+    /// Add footer widget areas
+add_action( 'widgets_init', 'radcliffe_widget_areas_reg' );
+function radcliffe_widget_areas_reg() {
+    register_sidebar(array(
+        'name' => __( 'Footer A', 'radcliffe' ),
+        'id' => 'footer-a',
+        'description' => __( 'Widgets in this area will be shown in the left column in the footer.', 'radcliffe' ),
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
-        ) );
-       }
-
-
+        'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
+        'after_widget' => '</div><div class="clear"></div></div>'
+    ));
+    register_sidebar(array(
+        'name' => __( 'Footer B', 'radcliffe' ),
+        'id' => 'footer-b',
+        'description' => __( 'Widgets in this area will be shown in the middle column in the footer.', 'radcliffe' ),
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+        'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
+        'after_widget' => '</div><div class="clear"></div></div>'
+    ));
+    register_sidebar(array(
+        'name' => __( 'Footer C', 'radcliffe' ),
+        'id' => 'footer-c',
+        'description' => __( 'Widgets in this area will be shown in the right column in the footer.', 'radcliffe' ),
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+        'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
+        'after_widget' => '</div><div class="clear"></div></div>'
+    ));
+}
 
 // Set content-width
 if ( ! isset( $content_width ) ) $content_width = 740;
