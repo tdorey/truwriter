@@ -2,18 +2,7 @@
 
         <div class="content">
 
-            </style>
-            <style type="text/css" id="wp-custom-css">
-            #content {
-                float: left;
-                width: 75%;
-            }
-            #secondary {
-                float: right;
-                width: 25%;
-            }		</style>
-
-	    <?php if (have_posts()) : ?>
+            	    <?php if (have_posts()) : ?>
 	
 		    <div class="posts">
 	
