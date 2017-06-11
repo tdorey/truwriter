@@ -507,7 +507,6 @@ body a,
 .featured-media { 
 	position: relative;
 	display: block;
-	width: 75%;
 	max-height: 682px;
 }
 
