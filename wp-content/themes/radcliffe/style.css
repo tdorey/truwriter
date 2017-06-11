@@ -497,16 +497,6 @@ body a,
 /*	5. Main Content
 /* -------------------------------------------------------------------------------- */
 
-/*sidebar adjustments */
-.content {
-	float: left;
-	width: 73%;
-}
-.secondary {
-	float: right;
-	width: 25%;
-}
-
 .post { position: relative; }
 
 .posts .post.has-featured-image { min-height: 266px; }
