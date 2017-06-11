@@ -496,15 +496,16 @@ body a,
 /* -------------------------------------------------------------------------------- */
 /*	5. Main Content
 /* -------------------------------------------------------------------------------- */
+
+
 /*sidebar adjustments */
 .content {
 	float: left;
 	width: 73%;
 }
 .secondary {
-	width: 24%;
 	float: right;
-	padding-right: 10px;
+	width: 25%;
 }
 
 .post { position: relative; }
