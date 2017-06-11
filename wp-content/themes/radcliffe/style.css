@@ -499,11 +499,11 @@ body a,
 
 /*sidebar adjustments */
 .content {
-	float: left;
+	float: right;
 	width: 75%;
 }
 .secondary {
-	float: right;
+	float: left;
 	width: 25%;
 }
 
@@ -1737,6 +1737,7 @@ li.comment {
 	font-weight: 700;
 	margin-bottom: 20px;
 	color: #222;
+
 }
 
 .widget-content a:hover { text-decoration: underline; }
