@@ -498,11 +498,11 @@ body a,
 /* -------------------------------------------------------------------------------- */
 /*sidebar adjustments */
 .content {
-	float: right;
+	float: left;
 	width: 75%;
 }
 .secondary {
-	float: left;
+	float: right;
 	width: 25%;
 }
 
