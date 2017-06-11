@@ -502,8 +502,9 @@ body a,
 	width: 75%;
 }
 .secondary {
+	width: 24.5%;
 	float: right;
-	width: 25%;
+	padding-right: 10px;
 }
 
 .post { position: relative; }
